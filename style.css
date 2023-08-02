@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Hind:wght@500&family=Jost:wght@500&family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+}
+
+header{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+li{
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .4s;
+    font-family: 'Jost', sans-serif;
+}
+li:hover {
+    color: chocolate;
+}
+
+#logo{
+    width: 70px;
+    height: 70px;
+}
+#banner{
+    background-image: url('https://assets.papelpop.com/wp-content/uploads/2023/07/travis-scott.png');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 480px;
+}
+#trailer-content{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    
+}
+.content{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.trailer{
+    width: 60%;
+
+}
+#sinopse{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.description{
+    color: white;
+    font-size: 18px;
+    font-family:'Jost', sans-serif;
+    width: 100%;
+   
+
+}
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(21, 121, 235);
+    color: black;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.actor-cards-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: cornsilk;
+    font-size: 17px;
+    font-family: 'Jost', sans-serif;
+
+}
+
+    .card:hover{
+        transform: scale(1.02);
+    }
+
+    .banner1{
+        background-image: url(https://i.guim.co.uk/img/media/0f27c8f38a43c395488bfdb8c2a4f9f3f3f531f6/0_24_4905_2944/master/4905.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=1f43fe161f2513a3bd94ebd7f464fcdc);
+    }
+
+    .banner2{
+        background-image: url(https://www.billboard.com/wp-content/uploads/2023/05/sza-may-2023-billboard-1548.jpg);
+    }
+
+    .banner3{
+        background-image: url(https://www.rbsdirect.com.br/filestore/5/7/0/4/7/5/1_4f0395389b7aa66/1574075_fc77065ee6c2ba7.jpg?w=700);
+    }
+
+    footer{
+        height: 300px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    span{
+        color: cornsilk;
+        font-family:'Jost', sans-serif;
+    }
+    .footer-navegation{
+        display: none;
+    }
+    .footer-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media(max-width:768px){
+        .footer-navegation {
+            display: block;
+        }
+        nav{
+            display: none;
+        }
+        #logo{
+            width: 68px;
+            height: 68px;
+        }
+        #banner{
+            background-position: 50%;
+            /* height: 400px; */
+           
+        }
+        #trailer-content{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            
+        }
+        .content{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .trailer{
+            width: 100%;
+            margin-left: 20px;
+        }
+        #sinopse{
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .description{
+            width: 100%;
+            
+        }
+        .button{
+            width: 100%;
+            
+            
+            
+        }
+        .card-content{
+            grid-template-columns: 1fr;
+            width: 78%;
+            margin-right: 9px;
+            
+        }
+
+
+    }

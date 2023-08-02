@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Hind:wght@500&family=Jost:wght@500&family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: rgb(36, 35, 35);
+    
+}
+
+header{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+
+li{
+    list-style: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .4s;
+    font-family: 'Jost', sans-serif;
+}
+li:hover {
+    color: chocolate;
+}
+
+#logo{
+    width: 70px;
+    height: 70px;
+}
+
+h1{
+    color: aliceblue;
+    font-weight: 800;
+    font-family:  'Jost', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.actor_cards-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: 60px;
+}
+.card{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: aliceblue;
+    font-size: 17px;
+    font-family:  'Jost', sans-serif;
+    
+    
+    
+}
+.card:hover {
+    transform:scale(1.02);
+}
+
+.banner1{
+    background-image: url(https://i.guim.co.uk/img/media/0f27c8f38a43c395488bfdb8c2a4f9f3f3f531f6/0_24_4905_2944/master/4905.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=1f43fe161f2513a3bd94ebd7f464fcdc);
+}
+.banner2{
+    background-image: url(https://www.billboard.com/wp-content/uploads/2023/05/sza-may-2023-billboard-1548.jpg);
+}
+.banner3{
+    background-image: url(https://www.rbsdirect.com.br/filestore/5/7/0/4/7/5/1_4f0395389b7aa66/1574075_fc77065ee6c2ba7.jpg?w=700);
+}
+.banner4{
+    background-image: url(https://pyxis.nymag.com/v1/imgs/54a/4c3/ea08da1260c4c137b9a12a1a1efbc502dd-beyonce.1x.rsquare.w1400.jpg);
+}
+.banner5{
+    background-image: url(https://akns-images.eonline.com/eol_images/Entire_Site/2021423/rs_1200x1200-210523164236-1200.the-weeknd-2021-billboard-music-awards.jpg?fit=around%7C1080:540&output-quality=90&crop=1080:540;center,top);
+}
+.banner6{
+    background-image: url(https://portalrapmais.com/wp-content/uploads/2020/06/21-savagee.jpg)
+}
+.banner7{
+    background-image: url(https://portalrapmais.com/wp-content/uploads/2021/09/future-1-scaled.jpg);
+}
+.banner8{
+    background-image: url(https://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/10/29/46/08/44/dfe156740cd7.jpg);
+}
+.banner9{
+    background-image: url(https://thewilddetectives.com/wp-content/uploads/2016/11/BonIver-1024x576.jpg);
+}
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    color: aliceblue;
+    font-family: 'Jost', sans-serif;
+}
+.footer-navegation{
+    display: none;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media(max-width:768px){
+    .footer-navegation{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .card{
+        width: 78%;
+    }
+    .cards-content{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
